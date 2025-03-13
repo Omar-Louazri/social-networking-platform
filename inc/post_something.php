@@ -116,7 +116,7 @@ if( defined("load_new") && load_new == "somedata_here3425"){
                                 <div class="btn-toolbar justify-content-between">
                                     <div class="btn-group"  >
                                         <button type="submit"  name="submit_post_video" id="btn_vid" style="display:none;"  class="btn btn-warning "><i class="fa fa-user-check"></i> Sumbit</button>
-                                        <button type="submit"  name="submit_post_img" id="btn_img"   class="btn btn-danger "><i class="fa fa-user-check"></i> Sumbit</button>
+                                        <button type="submit"  name="submit_post_img" id="btn_img" style="display:none;"   class="btn btn-danger "><i class="fa fa-user-check"></i> Sumbit</button>
                                         <button type="submit"  name="submit_post"    id="btn_text_area"   class="btn btn-success "><i class="fa fa-user-check"></i> Sumbit</button>
                                     </div>
                                         <button id="tag_tabs_open" type="button" class="btn btn-link">
