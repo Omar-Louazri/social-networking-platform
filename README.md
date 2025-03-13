@@ -32,7 +32,7 @@ Built with **PHP & MySQL** for backend processing and database management.
    ```
 2. Navigate to the project folder:
    ```bash
-   cd social-networking-platform
+   cd social-networking-platform # (open in IDLE aka VScode )
    ```
 3. Import the database (`database.sql`) into MySQL.
 4. Configure the database connection in `config.php`:
@@ -44,12 +44,45 @@ Built with **PHP & MySQL** for backend processing and database management.
    ```
 5. Start a local server:
    ```bash
-   php -S localhost:8000
+   Go to XAMPP or WAMP server then start #(Both MYSQL PhpMyAdmin and APache )
    ```
-6. Open `http://localhost:8000` in your browser.
+6. Open `http://localhost/social-networking-platform` in your browser.
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+##VERSIONS :
+```
+--------------------------- PHP ----------------------------------------
+PHP 7.3.4 (cli) (built: Apr  2 2019 21:57:22) ( NTS MSVC15 (Visual C++ 2017) x64 )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.3.4, Copyright (c) 1998-2018 Zend Technologies
+----------------------------MYSQL---------------------------------------
+
+Database server
+
+    Server: MySQL (127.0.0.1 via TCP/IP)
+    Server type: MySQL
+    Server connection: SSL is not being used Documentation
+    Server version: 9.1.0 - MySQL Community Server - GPL
+    Protocol version: 10
+    User: root@localhost
+    Server charset: UTF-8 Unicode (utf8mb4)
+ phpMyAdmin
+
+    Version information: 5.2.1, latest stable version: 5.2.2
+
+Web server
+
+    Apache/2.4.62 (Win64) PHP/7.4.33 mod_fcgid/2.3.10-dev
+    Database client version: libmysql - mysqlnd 7.4.33
+    PHP extension: mysqli Documentation curl Documentation mbstring Documentation
+    PHP version: 7.4.33
+
+
+
+```
+
 
 ## License
 This project is licensed under the MIT License.
