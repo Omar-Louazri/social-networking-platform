@@ -1,0 +1,117 @@
+.drop-noti{
+    width: 20%;
+    background: #f7f7f7;
+    border-radius: 5px;
+    line-height: 55px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #212529d9;
+    cursor: pointer;
+    padding: 0 20px;
+    border: 1px solid #00000030;
+    text-align: center;
+  }
+  nav .drop-btn span{
+    float: right;
+    line-height: 50px;
+    font-size: 28px;
+     
+  }
+  
+  nav .tooltip{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #f2f2f2;
+    transform: rotate(45deg);
+    left: 50px;
+    top: 117px;
+    border-top: 1px solid #9b9b9b;
+    border-left: 1px solid #b3b3b3;
+  }
+  nav .tooltip.show{
+    display: block;
+  
+  }
+  nav .wrapper{
+    width: 90%;
+    margin: auto;
+        margin-top: auto;
+    overflow: hidden;
+    display: flex;
+    border-radius: 5px;
+    background: #d5d5d54f;
+    border: 1px solid #b3b3b3;
+    margin-top: 15px;
+    display:none;
+  }
+  .drops-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  nav .wrapper.show{
+    display: block;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  .wrapper ul{
+    list-style: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  .wrapper ul li{
+    line-height: 55px;
+  }
+  .wrapper ul li a{
+    position: relative;
+    color: #2b2b2b;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    text-decoration: none;
+  }
+  .wrapper ul li:hover a{
+    background: #d6d6d6;
+    transition: all 0.2s ease;
+  }
+  ul li a .icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+  }
+  ul li a .icon span{
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+  }
+  ul li a i{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    pointer-events: none;
+  }
+  .wrapper ul.setting-drop,
+  .wrapper ul.help-drop,
+  .wrapper ul.contact-drop{
+    display: none;
+  }
+  .wrapper .arrow{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b0b3b8;
+    cursor: pointer;
+  }
+  .wrapper .arrow span{
+    margin-right: 15px;
+  }

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+.mentiony-container [contenteditable=true]:empty:not(:focus):before{
+	content:attr(data-placeholder);
+	color:#999999;
+}
+
+.mentiony-container{ position:relative;height:auto; border:1px solid #cecece;
+	/* NOTE: All top-right-bottom-left must be equal */
+	padding:10px;
+}
+.mentiony-container .pl0{ padding-left:0;}
+.mentiony-container .mention-input-hidden{
+	float:left;
+	display:inline-block; 
+	visibility:hidden; 
+	width:0!important;
+	height:0!important; 
+	margin:0!important; 
+	padding:0!important;
+	opacity:0!important;
+}
+
+.mentiony-container .mentiony-popover{
+	position:absolute;
+	z-index:1000;
+	width: 300px;
+	height:auto;
+	max-height: 300px;
+	display:none;
+	border:1px solid #eee;
+	border-radius:4px;
+	padding:0;
+	background:#fefefe;
+	scrollbar-width: thin;
+	overflow-y: auto;
+}
+
+.mentiony-container .mentiony-content {
+	width: auto !important;
+	outline: none;
+}
+
+.mentiony-list{list-style:none; width: 100%; padding:0;margin: 0;}
+.mentiony-item{border-top:1px solid #eee; height: 50px; padding: 5px 10px; cursor:pointer; overflow: hidden;}
+.mentiony-item:first-child{border:none}
+.mentiony-item:hover{ background:#ededed;}
+.mentiony-item.active{ background:#ddd;}
+.mentiony-item img{ 
+	width:40px;
+	height:40px;
+	top: 50%;
+	left: 50%;
+	position: absolute !important;
+	display: block;
+	transform: translate(-50%, -50%);
+}
+.cont_{
+	display: grid;
+	grid-template-columns: 50px 1fr;
+}
+.img_c{
+	position: relative;
+}
+.mentiony-item .title, .mentiony-item .help-block{ margin:0;}
+.mentiony-item .title{
+	/* font-family: 'Concert One', cursive; */
+	font-size: 18px;
+	/* font-weight: 600; */
+}
+.mentiony-item .help-block{
+	font-size: 12px;
+	font-weight: lighter;
+}
+.mention-area .highlight a.mentiony-link{color:white; background:#009688; padding: 1px 4px; border-radius: 3px;}
+

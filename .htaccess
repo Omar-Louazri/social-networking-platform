@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteRule ^home?$    index.php
+RewriteRule ^Signup?$  signup-user.php
+RewriteRule ^Login?$   login-user.php
+RewriteRule ^Logout?$  logout-user.php
+
+RewriteRule ^@([^\s]+)?$ profile.php?u=$1
+RewriteRule ^@undefined--?$ error_page.php?u=$1
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^user_img/(.+)$ reader64.php?hash_p!=$1 [L]
+
+
+#reader64.php?img=$1
